@@ -12,7 +12,7 @@ async function injectAds() {
 	const ads = await fetch('./shared/ads.json').then(r => r.json()).catch(() => []);
 	if (!ads.length) return;
 
-	const picks = ads.sotrt(() => 0.5 - Math.random());
+	const picks = ads.sort(() => 0.5 - Math.random());
 
 	slots.forEach((slot, i) => {
 		const ad = picks[i % picks.length];
