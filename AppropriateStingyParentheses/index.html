@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>home | 67 corner</title>
+
+  <link rel="stylesheet" href="shared/style.css" />
+  <link rel="stylesheet" href="home.css" />
+
+
+  <script defer src="home.js"></script>
+</head>
+
+<body>
+  <div id="navbar-container"></div>
+
+  <header class="hero">
+    <!-- i js learned that this is called a hero section. its like the first thing you see when you open the site below the navbar -->
+    <h1>Welcome to <span class="brand-text">the 67 corner</span></h1>
+    <p class="tagline">A collection of all the coding stuff &amp; demos I can make before the deadline.</p>
+    <a href="#latest" class="cta-btn">What's new ↓</a>
+  </header>
+
+  <main class="wrapper homepage-main" id="latest">
+    <section class="latest-col">
+      <h2>Latest Projects</h2>
+      <ul id="latest-list" class="latest-grid"><!-- filled by my js --></ul>
+    </section>
+
+    <!-- not real ads, aint nobody paying for this -->
+    <aside class="ads">
+      <img class="ad" alt="Advertisement">
+      <img class="ad" alt="Advertisement">
+    </aside>
+  </main>
+
+  <footer>© <span id="year"></span> adam mosseri – all lefts reserved</footer>
+</body>
+
+</html>
