@@ -1,6 +1,6 @@
 const paths = {
-	nav: './shared/navbar.html',
-	data: './shared/projects.json'
+	nav: '/eoy-site/shared/navbar.html',
+	data: '/eoy-site/shared/projects.json'
 };
 const $ = sel => document.querySelector(sel);
 
@@ -9,7 +9,7 @@ async function injectAds() {
 	const slots = [...document.querySelectorAll('a.ad-slot, img.ad')];
 	if (!slots.length) return;
 
-	const ads = await fetch('./shared/ads.json').then(r => r.json()).catch(() => []);
+	const ads = await fetch('/eoy-site/shared/ads.json').then(r => r.json()).catch(() => []);
 	if (!ads.length) return;
 
 	const picks = ads.sort(() => 0.5 - Math.random());
@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 	const list = $('#latest-list');
 	list.innerHTML = latest.map(g => `
 		<li>
-			<a href="./shared/page-frame.html?proj=${g.id}">
+			<a href="/eoy-site/shared/page-frame.html?proj=${g.id}">
 				<img src="${g.thumb}" class="latest-thumb" alt="">
 				<div class="latest-meta">
 					<h3>${g.title}</h3>
