@@ -1,0 +1,14 @@
+[
+	{
+		"id": "drake-snake",
+		"title":"Drake (Snake)",
+		"tags": ["games", "mustard", "retro", "interactive"],
+		"thumb": "/projects/drake-snake/thumb.png"
+	},
+	{
+		"id": "bars",
+		"title":"Bars 🔥",
+		"tags": ["67", "demo"],
+		"thumb": "/projects/bars/thumb.png"
+	}
+]

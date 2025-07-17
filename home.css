@@ -1,0 +1,43 @@
+.hero{
+	text-align:center;
+	padding:4rem 1rem 3rem;
+	background:linear-gradient(135deg,#9bb86a 0%,#b9d989 60%);
+	color:#1e1e1e;
+}
+.hero .brand-text{color:#fff;font-weight:700;text-shadow:0 1px 3px rgba(0,0,0,.4)}
+.tagline{font-size:1.2rem;margin:.5rem 0 1.5rem}
+.cta-btn{
+	display:inline-block;
+	padding:.65rem 1.25rem;
+	background:#fff;
+	border-radius:6px;
+	font-weight:600;
+	text-decoration:none;
+	box-shadow:0 2px 4px rgba(0,0,0,.15);
+	transition:.2s transform;
+}
+.cta-btn:hover{transform:translateY(-2px)}
+
+.latest-col{flex:1}
+.latest-col h2{margin-bottom:.75rem}
+.latest-grid{
+	list-style:none;
+	display:grid;
+	gap:1rem;
+	grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+}
+.latest-grid li{
+	background:#fff;
+	border-radius:8px;
+	overflow:hidden;
+	box-shadow:0 1px 4px rgba(0,0,0,.1);
+	transition:.15s transform;
+}
+.latest-grid li:hover{transform:translateY(-3px)}
+.latest-thumb{width:100%;aspect-ratio:4/3;object-fit:cover}
+.latest-meta{padding:.5rem .75rem}
+.latest-meta h3{font-size:1.05rem;margin-bottom:.25rem}
+.latest-tags{color:#666;font-size:.85rem}
+
+/* if the screen is too small theres no space for ads. someone can probably figure out a way to abuse this but i dont care because nobodys paying for the ads */
+@media(max-width:900px){.ads{display:none}}
